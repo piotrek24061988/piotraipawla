@@ -3,14 +3,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  margin-top: 5rem;
   font-family: sans-serif;
   color: black;
-}
-
-.container {
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .scrollup {
@@ -30,3 +24,22 @@ body {
 .scrollup:hover, .store-quant-img:hover {
     transform: scale(0.7);
 }
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.topimg {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.content {
+	opacity: 0.8;
+}
+
+.hidden {
+    display: none;
+}
+

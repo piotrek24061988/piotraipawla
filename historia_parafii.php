@@ -11,9 +11,8 @@
 
         <main class="container">
 			<?php include 'scrollup.php'; ?>
-            
 			
-			<h3>
+			<h3 class="bg-light mt-1 content">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium augue at lacus dictum dictum. Morbi maximus vitae nibh quis convallis. Morbi sodales odio at diam sagittis placerat. Fusce luctus eros vitae risus sodales venenatis. Vestibulum ultricies ex vitae arcu lobortis dignissim. Duis lacinia, tortor nec imperdiet ultrices, orci tellus porttitor metus, a viverra dui quam eu augue. Fusce vitae massa condimentum, laoreet ligula vitae, tincidunt ex. Vestibulum non dignissim leo. Mauris venenatis, velit non cursus malesuada, est lacus ultrices justo, eget elementum velit purus sed lorem. Donec ac magna lobortis, aliquet nibh vitae, tincidunt lectus. Nunc eget nunc ligula. Nullam rutrum id dui aliquet fermentum. Cras ac ullamcorper velit.
 
 				Mauris dictum augue lacus, et feugiat quam facilisis sodales. Ut accumsan quam ante, ut tincidunt lacus commodo eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent et neque molestie, placerat tortor ultricies, scelerisque felis. Aliquam auctor metus tristique justo molestie ultricies. Curabitur auctor consequat tortor, eget mattis leo vestibulum ac. Curabitur ut ex vel lorem efficitur sollicitudin in vel massa. Nam dapibus turpis ac lacus euismod, non consectetur lorem hendrerit. Praesent quis consectetur dolor, in consequat est. Quisque pellentesque volutpat urna sed commodo. Maecenas viverra velit odio, eget sodales purus ullamcorper id. Phasellus sollicitudin eleifend eleifend. Proin vel aliquam purus. Curabitur ac lacinia mauris, sit amet semper dolor.
@@ -26,4 +25,5 @@
 			</h3>
         </main>
 
+		<?php include 'footer.php'; ?>
     </body>
