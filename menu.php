@@ -1,4 +1,6 @@
 <?php
+
+	session_start();
 	
 echo<<<END
 	<header class="site-header col-12">
@@ -33,6 +35,20 @@ echo<<<END
 								<a class="dropdown-item bg-light font-weight-bold" href="#">Dodatkowo 3</a>
 							</div>
 						</div>
+END;
+						if(!isset($_SESSION['user']))
+						{
+							echo<<<END
+								<a class="btn btn-light w-100 mx-1 font-weight-bold mr-auto" href="logowanie.php">Logowanie</a>
+							END;
+						}
+						else
+						{
+							echo<<<END
+								<a class="btn btn-light w-100 mx-1 font-weight-bold mr-auto" href="wyloguj.php">Wylogowanie</a>
+							END;
+						}
+echo<<<END
 					</div>
 				</div>
 			</div>
