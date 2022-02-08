@@ -12,11 +12,19 @@
         <main class="container" style="min-height: 100vh;">
 			<?php include 'scrollup.php'; ?>
 			
+			<div class="bg-light mt-1 content text-center">
 			<?php
 			
-				echo "<p>Zalogowany jako: ".$_SESSION['user'];
+				if(!isset($_SESSION['user']))
+				{
+					header('Location: domowa');
+				}
+			
+				echo "<p><b>Zalogowany jako: ".$_SESSION['user']."</b></p>";
+				echo "<p><b>Twój email w systemie: ".$_SESSION['email']."</b></p>";
 			
 			?>
+			</div>
         </main>
 
 		<?php include 'footer.php'; ?>

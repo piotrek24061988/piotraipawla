@@ -8,9 +8,9 @@ body {
 }
 
 .scrollup {
-    width: 100px;
-    height: 128px;
-    background: url("../media/scrollup.png");
+    width: 110px;
+    height: 150px;
+    background: url("../media/scrollup2.png");
     background-repeat: no-repeat;
     background-size: cover;
     position : fixed;
@@ -21,8 +21,40 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
+.glownezdjecia {
+    width: 480px;
+    height: 320px;
+	width: 40vw;
+	height: 44vh;
+	position : fixed;
+	border: 10px solid #ffffff;
+	border-radius: 10px;
+    left: 30%;
+    top: 54%;
+    display: none;
+    z-index:1;
+}
+
+.oltarz {
+    background: url("../media/oltarz2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.korytarz {
+    background: url("../media/korytarz.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.organy {
+    background: url("../media/organy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .scrollup:hover, .store-quant-img:hover {
-    transform: scale(0.7);
+    transform: scale(0.8);
 }
 
 .container {

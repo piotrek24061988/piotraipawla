@@ -14,10 +14,22 @@
 			<?php include 'scrollup.php'; ?>
 			
 			<div class="bg-light mt-1 content text-center">
+<?php
+				if(isset($_SESSION['user']))
+				{
+					header('Location: domowa');
+				}
+
+				if(isset($_SESSION['blad']))
+				{
+					echo $_SESSION['blad'];
+					unset($_SESSION['blad']);
+				}
+?>
 				<h3>Logowanie:</h3>
 				<form action="zaloguj.php" method="post">
-					Login:</br> <input type="text" name="login"/> </br> 
-					Hasło:</br> <input type="password" name="haslo"/> </br> 
+					<b>Login:</b></br> <input type="text" name="login"/> </br> 
+					<b>Hasło:</b></br> <input type="password" name="haslo"/> </br> 
 					<input type="submit" value="Zaloguj się" class="mt-1 mb-1"/>
 				</form>
 			</div>

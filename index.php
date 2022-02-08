@@ -11,6 +11,7 @@
 
         <main class="container" style="min-height: 100vh;">
 			<?php include 'scrollup.php'; ?>
+			<?php include 'mousemove.php'; ?>
         </main>
 
 		<?php include 'footer.php'; ?>
