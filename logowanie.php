@@ -3,7 +3,6 @@
 
 	<head>
 		<?php include 'header.php'; ?>
-		<title>Logowanie</title>
 	</head>
 
     <body>

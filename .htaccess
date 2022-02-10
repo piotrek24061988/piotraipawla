@@ -10,3 +10,6 @@ RewriteRule parafia historia_parafii.php
 RewriteRule logowanie logowanie.php
 RewriteRule wyloguj wyloguj.php
 RewriteRule uzytkownik uzytkownik.php
+RewriteRule rejestracja rejestracja.php
+RewriteRule duchowni duchowni.php
+RewriteRule kontakt kontakt.php

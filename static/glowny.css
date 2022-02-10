@@ -8,9 +8,9 @@ body {
 }
 
 .scrollup {
-    width: 110px;
-    height: 150px;
-    background: url("../media/scrollup2.png");
+    width: 100px;
+    height: 128px;
+    background: url("../media/scrollup.png");
     background-repeat: no-repeat;
     background-size: cover;
     position : fixed;
@@ -70,6 +70,11 @@ body {
 .content {
 	opacity: 0.8;
 }
+
+.content2 {
+	opacity: 0.9;
+}
+
 
 .hidden {
     display: none;

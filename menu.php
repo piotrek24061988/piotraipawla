@@ -7,7 +7,7 @@ echo<<<END
 		<div class="row topcontent bg-light">
 			<img src="media/pip5.jpg" alt="ołtarz" class="col-12 col-md-2 bg-light topimg"/>
 			<div class="col-12 col-md-8 bg-light d-flex align-items-center justify-content-center">
-			<h1>Parafia Św. Apostołów Piotra i Pawła w Bydgoszczy</h1>
+			<h2><b>Parafia pw. Św. Apostołów Piotra i Pawła w Bydgoszczy</b></h2>
 			</div>
 			<img src="media/pip4.jpg" alt="ołtarz" class="col-12 col-md-2 bg-light topimg"/>
 		</div>
@@ -21,8 +21,16 @@ echo<<<END
 				<div class="collapse navbar-collapse" id="navbarToggle">
 					<div class="navbar-nav mr-auto ml-auto">
 						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="domowa">Głowna</a>
-						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="#">Kontakt</a>
-						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="parafia">Parafia</a>
+						<div class="nav-item dropdown">
+							<button class="btn btn-light w-100 mx-1 font-weight-bold" id="subnav" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Parafia
+							</button>
+							<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
+								<a class="dropdown-item bg-light font-weight-bold" href="kontakt">Kontakt</a>
+								<a class="dropdown-item bg-light font-weight-bold" href="parafia">Historia</a>
+								<a class="dropdown-item bg-light font-weight-bold" href="duchowni">Duchowieństwo</a>
+							</div>
+						</div>
 						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="#">Ogłoszenia</a>
 						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="#">Galeria</a>
 						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="#">Sakramenty</a>
@@ -40,15 +48,16 @@ echo<<<END
 END;
 						if(!isset($_SESSION['user']))
 						{
-							echo<<<END
+echo<<<END
 								<a class="btn btn-light w-100 mx-1 font-weight-bold" href="logowanie">Logowanie</a>
-							END;
+END;
 						}
 						else
 						{
-							echo<<<END
-								<a class="btn btn-light w-100 mx-1 font-weight-bold mr-auto" href="wyloguj">Wylogowanie</a>
-							END;
+echo<<<END
+								<a class="btn btn-light w-100 mx-1 font-weight-bold" href="wyloguj">Wylogowanie</a>
+								<a class="btn btn-light w-100 mx-1 font-weight-bold" href="rejestracja">Rejestracja</a>
+END;
 						}
 echo<<<END
 					</div>
