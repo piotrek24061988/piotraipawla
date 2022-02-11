@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 07, 2022 at 08:33 PM
+-- Generation Time: Feb 11, 2022 at 06:27 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -39,8 +39,8 @@ CREATE TABLE `admini` (
 --
 
 INSERT INTO `admini` (`id`, `name`, `password`, `email`) VALUES
-(1, 'proboszcz', 'MWZMJSUNP2021', 'proboszcz@gmail.com'),
-(2, 'piotrek24061988', 'WPWSDWDTSWTTICAWCC2021', 'piotrek24061988@gmail.com');
+(1, 'proboszcz', '$2y$10$YXTYzvU1lV4F9ZAESPInOeecv2p7KGMObEJ5ND.kr7j09yIav5G92', 'proboszcz@gmail.com'),
+(2, 'piotrek24061988', '$2y$10$q5IeH6tTXrllcXbDTu3ZK.CVpmEZw00WsI04HfBml8AAWCk6gbIxq', 'piotrek24061988@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -90,7 +90,7 @@ ALTER TABLE `ogloszenia`
 -- AUTO_INCREMENT for table `admini`
 --
 ALTER TABLE `admini`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `ogloszenia`

@@ -22,14 +22,12 @@
 		$haslo = $_POST['haslo'];
 		
 		$login = htmlentities($login, ENT_QUOTES, "UTF-8");
-		$haslo = htmlentities($haslo, ENT_QUOTES, "UTF-8");
+		//$haslo = htmlentities($haslo, ENT_QUOTES, "UTF-8");
 	
 		echo $login."<br/>";
 		echo $haslo."<br/>";
 		
-		$sql = sprintf("SELECT * FROM admini WHERE name='%s' AND password='%s'",
-		               mysqli_real_escape_string($polaczenie, $login),
-					   mysqli_real_escape_string($polaczenie, $haslo));
+		$sql = sprintf("SELECT * FROM admini WHERE name='%s'", mysqli_real_escape_string($polaczenie, $login));
 		
 		if($rezultat = @$polaczenie->query($sql))
 		{
@@ -37,18 +35,26 @@
 			if($ilu_userow > 0)
 			{
 				$wiersz = $rezultat->fetch_assoc();
-				$user = $wiersz['name'];
-				$email = $wiersz['email'];
-				$_SESSION['user'] = $user;
-				$_SESSION['email'] = $email;
-				echo "zalogowano jako ".$wiersz['user'];
+
+				if(password_verify($haslo, $wiersz['password']) == true)
+				{
+					$user = $wiersz['name'];
+					$email = $wiersz['email'];
+					$_SESSION['user'] = $user;
+					$_SESSION['email'] = $email;
+					echo "zalogowano jako ".$wiersz['user'];
 				
-				$rezultat->close();
-				header('Location: uzytkownik');
+					$rezultat->close();
+					header('Location: uzytkownik');		
+				}			
+				else
+				{
+					header('Location: logowanie');
+					$_SESSION['blad'] = '<b class="text-danger">Nieprawidłowe dane logowania</b>';
+				}
 			}
 			else
 			{
-				echo "nie zalogowano";
 				header('Location: logowanie');
 				$_SESSION['blad'] = '<b class="text-danger">Nieprawidłowe dane logowania</b>';
 			}

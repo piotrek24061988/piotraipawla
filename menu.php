@@ -35,16 +35,6 @@ echo<<<END
 						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="#">Galeria</a>
 						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="#">Sakramenty</a>
 						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="#">Stowarzyszenia</a>
-						<div class="nav-item dropdown">
-							<button class="btn btn-light w-100 mx-1 font-weight-bold" id="subnav" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Dodatkowo
-							</button>
-							<div class="dropdown-menu bg-light ml-1" aria-labelledby="subnav">
-								<a class="dropdown-item bg-light font-weight-bold" href="#">Dodatkowo 1</a>
-								<a class="dropdown-item bg-light font-weight-bold" href="#">Dodatkowo 2</a>
-								<a class="dropdown-item bg-light font-weight-bold" href="#">Dodatkowo 3</a>
-							</div>
-						</div>
 END;
 						if(!isset($_SESSION['user']))
 						{
