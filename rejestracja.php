@@ -79,7 +79,8 @@
 								if($rezultat)
 								{
 									$_SESSION['rejestracja'] = true;
-									header('Location: logowanie');
+									//header('Location: logowanie');
+									echo "Stworzono nowe konto";
 								}
 								else
 								{

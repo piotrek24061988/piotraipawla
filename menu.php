@@ -45,8 +45,16 @@ END;
 						else
 						{
 echo<<<END
-								<a class="btn btn-light w-100 mx-1 font-weight-bold" href="wyloguj">Wylogowanie</a>
-								<a class="btn btn-light w-100 mx-1 font-weight-bold" href="rejestracja">Rejestracja</a>
+							<div class="nav-item dropdown">
+								<button class="btn btn-light w-100 mx-1 font-weight-bold" id="subnav" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Administracja
+								</button>
+								<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
+									<a class="dropdown-item bg-light font-weight-bold" href="rejestracja">Rejestracja</a>
+									<a class="dropdown-item bg-light font-weight-bold" href="admini">Administratorzy</a>
+									<a class="dropdown-item bg-light font-weight-bold" href="wyloguj">Wylogowanie</a>
+								</div>
+							</div>
 END;
 						}
 echo<<<END

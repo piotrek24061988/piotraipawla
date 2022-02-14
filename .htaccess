@@ -13,3 +13,4 @@ RewriteRule uzytkownik uzytkownik.php
 RewriteRule rejestracja rejestracja.php
 RewriteRule duchowni duchowni.php
 RewriteRule kontakt kontakt.php
+RewriteRule admini admini.php
