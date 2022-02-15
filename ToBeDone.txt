@@ -1,0 +1,2 @@
+1) Images update with title and description
+2) pages pagination for images
