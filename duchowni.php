@@ -16,7 +16,7 @@
 				
 				<div class="row">
 					<h2 class="col-12 text-center mt-3">Proboszcz</h2>
-					<img src="media/proboszcz.jpg" alt="proboszcz" class="col-12 col-md-3 noopacity"/>
+					<img src="media/proboszcz.jpg" alt="proboszcz" class="col-12 col-md-3"/>
 					<p class="col-12 col-md-9 justify-content-center d-flex align-items-center">
 						Ks. Ryszard Szymkowiak <br/>
 						ul. Mikołaja Reja 3, 85-007 Bydgoszcz<br/> 

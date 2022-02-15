@@ -27,12 +27,36 @@ echo<<<END
 							</button>
 							<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
 								<a class="dropdown-item bg-light font-weight-bold" href="kontakt">Kontakt</a>
+								<a class="dropdown-item bg-light font-weight-bold" href="biuro">Biuro</a>
 								<a class="dropdown-item bg-light font-weight-bold" href="parafia">Historia</a>
 								<a class="dropdown-item bg-light font-weight-bold" href="duchowni">Duchowieństwo</a>
 							</div>
 						</div>
-						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="#">Ogłoszenia</a>
-						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="#">Galeria</a>
+						<div class="nav-item dropdown">
+							<button class="btn btn-light w-100 mx-1 font-weight-bold" id="subnav" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Ogłoszenia
+							</button>
+							<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
+								<a class="dropdown-item bg-light font-weight-bold" href="#">Stałe</a>
+								<a class="dropdown-item bg-light font-weight-bold" href="#">Bieżące</a>
+							</div>
+						</div>
+						<div class="nav-item dropdown">
+							<button class="btn btn-light w-100 mx-1 font-weight-bold" id="subnav" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Galeria
+							</button>
+							<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
+								<a class="dropdown-item bg-light font-weight-bold" href="zdjecia">Zdjecia</a>
+END;
+								if(isset($_SESSION['user']))
+								{
+echo<<<END
+									<a class="dropdown-item bg-light font-weight-bold" href="dodajZdjecie">Dodaj zdjęcie</a>
+END;
+								}
+echo<<<END
+							</div>
+						</div>
 						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="#">Sakramenty</a>
 						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="#">Stowarzyszenia</a>
 END;

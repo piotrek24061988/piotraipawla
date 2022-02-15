@@ -10,16 +10,17 @@
 		<?php include 'menu.php'; ?>
 
         <main class="container">
+		<?php
+			if(!isset($_SESSION['user']))
+			{
+				header('Location: domowa');
+			}
+		?>
+
 			<?php include 'scrollup.php'; ?>
 			
 			<div class="bg-light mt-1 content text-center mb-1">
 <?php
-				if(!isset($_SESSION['user']))
-				{
-					header('Location: domowa');
-					exit();
-				}
-
 				if(isset($_POST['email'])) 
 				{
 					$walidacjaOk = true;
@@ -78,9 +79,7 @@
 								$rezultat = @$polaczenie->query($sql);
 								if($rezultat)
 								{
-									$_SESSION['rejestracja'] = true;
-									//header('Location: logowanie');
-									echo "Stworzono nowe konto";
+									echo 'Udana rejestracja - można się zalogować na konto nowego użytkownika';
 								}
 								else
 								{

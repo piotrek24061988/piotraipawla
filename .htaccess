@@ -13,4 +13,7 @@ RewriteRule uzytkownik uzytkownik.php
 RewriteRule rejestracja rejestracja.php
 RewriteRule duchowni duchowni.php
 RewriteRule kontakt kontakt.php
+RewriteRule biuro biuro.php
 RewriteRule admini admini.php
+RewriteRule zdjecia zdjecia.php
+RewriteRule dodajZdjecie dodajZdjecie.php
