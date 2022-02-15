@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE HTML>
 <html lang="pl">
 
@@ -14,6 +17,12 @@
 			
 			<div class="bg-light mt-1 text-center">
 			<?php
+				if (isset($_SESSION['zdjecia']))
+				{
+					echo $_SESSION['zdjecia'];
+					unset($_SESSION['zdjecia']);
+				}
+			
 				require_once "connect.php";
 				mysqli_report(MYSQLI_REPORT_STRICT);
 				try
@@ -21,7 +30,7 @@
 					$polaczenie = new mysqli($host, $db_user, $db_password, $db_name);
 					if($polaczenie->connect_errno == 0)
 					{
-						$sql = "SELECT * FROM zdjecia";	
+						$sql = "SELECT * FROM zdjecia ORDER BY id DESC";	
 						$rezultat = @$polaczenie->query($sql);
 
 						if(!$rezultat) throw new Exception($polaczenie->error);
@@ -40,7 +49,7 @@ END;
 						  while($wiersz = $rezultat->fetch_assoc())
 						  {
 								echo '<tr class="row">';
-								echo '<td class="col-1">'.'<a href="szczegolyZdjecia.php?id='.$wiersz['id'].'">'.$wiersz['id'].'</a>'.'</td>';
+								echo '<td class="col-1">'.'<a href="szczegolyZdjecia?id='.$wiersz['id'].'">'.$wiersz['id'].'</a>'.'</td>';
 								echo '<td class="col-3">'.$wiersz['tytul'].'</td>';
 								echo '<td class="col-4"><img src="media/user/'.$wiersz['sciezka'].'" alt="proboszcz" class="img-fluid"/></td>';
 								echo '<td class="col-3">'.$wiersz['tresc'].'</td>';

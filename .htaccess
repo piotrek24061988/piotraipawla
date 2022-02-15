@@ -17,3 +17,4 @@ RewriteRule biuro biuro.php
 RewriteRule admini admini.php
 RewriteRule zdjecia zdjecia.php
 RewriteRule dodajZdjecie dodajZdjecie.php
+RewriteRule szczegolyZdjecia szczegolyZdjecia.php

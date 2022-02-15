@@ -1,5 +1,4 @@
 <?php
-	
 echo<<<END
 
 	<script src="static/jquery.mouseMove.js"></script>

@@ -50,6 +50,13 @@ END;
 echo<<<END
 						</table>
 END;
+
+						if(isset($_SESSION['user']))
+						{
+							echo '<form action="kasuj.php?id='.$id.'" method="post">';
+							echo '<input type="submit" value="kasuj" class="mt-1 mb-1 btn btn-danger"/>';
+							echo '</form>';							
+						}
 				
 						$polaczenie->close();
 					}

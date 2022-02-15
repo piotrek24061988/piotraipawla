@@ -9,7 +9,7 @@
 	
 		<?php include 'menu.php'; ?>
 
-        <main class="container" style="min-height: 100vh;">
+        <main class="container"">
 			<?php include 'scrollup.php'; ?>
 			
 			<div class="bg-light mt-1 content text-center">

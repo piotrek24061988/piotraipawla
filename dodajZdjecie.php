@@ -10,14 +10,13 @@
 		<?php include 'menu.php'; ?>
 
         <main class="container">
-		<?php
-			if(!isset($_SESSION['user']))
-			{
-				header('Location: domowa');
-			}
-		?>
-
 			<?php include 'scrollup.php'; ?>
+			<?php
+				if(!isset($_SESSION['user']))
+				{
+					header('Location: domowa');
+				}
+			?>
 			
 			<div class="bg-light mt-1 mb-5 content2 d-flex align-items-center justify-content-center row">
 			<?php

@@ -10,14 +10,13 @@
 		<?php include 'menu.php'; ?>
 
         <main class="container">
-		<?php
-			if(!isset($_SESSION['user']))
-			{
-				header('Location: domowa');
-			}
-		?>
-
 			<?php include 'scrollup.php'; ?>
+			<?php
+				if(!isset($_SESSION['user']))
+				{
+					header('Location: domowa');
+				}
+			?>
 			
 			<div class="bg-light mt-1 content text-center mb-1">
 <?php
@@ -79,7 +78,7 @@
 								$rezultat = @$polaczenie->query($sql);
 								if($rezultat)
 								{
-									echo 'Udana rejestracja - można się zalogować na konto nowego użytkownika';
+									echo '<div class="text-success"><b>Udana rejestracja - można się zalogować na konto nowego użytkownika</b></div>';
 								}
 								else
 								{

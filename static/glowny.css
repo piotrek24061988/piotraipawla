@@ -5,6 +5,7 @@ body {
   background-size: 100% 100%;
   font-family: sans-serif;
   color: black;
+  min-height: 100vh;
 }
 
 .scrollup {
