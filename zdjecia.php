@@ -14,6 +14,8 @@
 			
 			<div class="bg-light mt-1 text-center">
 			<?php
+				@session_start();
+			
 				if (isset($_SESSION['zdjecia']))
 				{
 					echo $_SESSION['zdjecia'];

@@ -1,5 +1,4 @@
 <?php
-	
 echo<<<END
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

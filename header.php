@@ -1,5 +1,4 @@
 <?php
-	
 echo<<<END
 
     <!-- Required meta tags -->

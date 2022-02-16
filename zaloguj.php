@@ -1,6 +1,5 @@
 <?php
-
-	session_start();
+	@session_start();
 	
 	if((!isset($_POST['login'])) || (!isset($_POST['haslo']))) 
 	{
@@ -22,7 +21,6 @@
 		$haslo = $_POST['haslo'];
 		
 		$login = htmlentities($login, ENT_QUOTES, "UTF-8");
-		//$haslo = htmlentities($haslo, ENT_QUOTES, "UTF-8");
 	
 		echo $login."<br/>";
 		echo $haslo."<br/>";

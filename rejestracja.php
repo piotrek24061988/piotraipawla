@@ -1,3 +1,11 @@
+<?php
+	@session_start();
+
+	if(!isset($_SESSION['user']))
+	{
+		header('Location: domowa');
+	}
+?>
 <!DOCTYPE HTML>
 <html lang="pl">
 
@@ -10,12 +18,6 @@
 		<?php include 'menu.php'; ?>
 
         <main class="container">
-			<?php
-				if(!isset($_SESSION['user']))
-				{
-					header('Location: domowa');
-				}
-			?>
 			<?php include 'scrollup.php'; ?>
 			
 			<div class="bg-light mt-1 content text-center mb-1">
