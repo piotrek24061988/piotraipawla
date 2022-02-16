@@ -18,3 +18,5 @@ RewriteRule admini admini.php
 RewriteRule zdjecia zdjecia.php
 RewriteRule dodajZdjecie dodajZdjecie.php
 RewriteRule szczegolyZdjecia szczegolyZdjecia.php
+RewriteRule kasujZdjecie kasujZdjecie.php
+RewriteRule aktualizujZdjecie aktualizujZdjecie.php

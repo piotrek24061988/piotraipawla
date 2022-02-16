@@ -1,6 +1,6 @@
 <?php
 
-	session_start();
+	@session_start();
 	
 echo<<<END
 	<header class="site-header col-12">

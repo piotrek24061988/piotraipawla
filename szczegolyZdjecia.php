@@ -1,3 +1,9 @@
+<?php
+	if(!isset($_GET['id']))
+	{
+		header('Location: zdjecia');
+	}
+?>
 <!DOCTYPE HTML>
 <html lang="pl">
 
@@ -28,7 +34,6 @@
 						if(!$rezultat) throw new Exception($polaczenie->error);
 
 						$ile_zdjec = $rezultat->num_rows;
-						echo "<p><b>ilość zdjęć: ".$ile_zdjec."</b><p>";	
 echo<<<END
 						<table class="d-flex align-items-center justify-content-center">
 							<tr class="row">
@@ -53,9 +58,13 @@ END;
 
 						if(isset($_SESSION['user']))
 						{
-							echo '<form action="kasuj.php?id='.$id.'" method="post">';
+							
+							echo '<form action="kasujZdjecie?id='.$id.'" method="post">';
 							echo '<input type="submit" value="kasuj" class="mt-1 mb-1 btn btn-danger"/>';
-							echo '</form>';							
+							echo '</form>';
+							echo '<form action="aktualizujZdjecie?id='.$id.'" method="post">';
+							echo '<input type="submit" value="aktualizuj" class="mt-1 mb-1 btn btn-light"/>';
+							echo '</form>';								
 						}
 				
 						$polaczenie->close();

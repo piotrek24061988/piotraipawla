@@ -29,11 +29,22 @@
 					{
 						$sql = "SELECT * FROM zdjecia ORDER BY id DESC";	
 						$rezultat = @$polaczenie->query($sql);
-
 						if(!$rezultat) throw new Exception($polaczenie->error);
-
+						
+						$rezultaty_per_strona = 5;
 						$ile_zdjec = $rezultat->num_rows;
+						$ile_stron = ceil($ile_zdjec / $rezultaty_per_strona);	
 						echo "<p><b>ilość zdjęć: ".$ile_zdjec."</b><p>";	
+						
+						$obecna_strona = 1;
+						if(isset($_GET['strona'])) {
+							$obecna_strona = $_GET['strona'];
+						}
+						
+						$limit = ($obecna_strona - 1)*$rezultaty_per_strona;
+						$sql = "SELECT * FROM zdjecia ORDER BY id DESC LIMIT ".$limit.",".$rezultaty_per_strona."";	
+						$rezultat = @$polaczenie->query($sql);
+						if(!$rezultat) throw new Exception($polaczenie->error);
 echo<<<END
 						<table class="d-flex align-items-center justify-content-center">
 							<tr class="row">
@@ -43,18 +54,25 @@ echo<<<END
 								<th class="col-3">tresc:</th>
 							</tr>
 END;
-						  while($wiersz = $rezultat->fetch_assoc())
-						  {
+							while($wiersz = $rezultat->fetch_assoc())
+							{
 								echo '<tr class="row">';
 								echo '<td class="col-1">'.'<a href="szczegolyZdjecia?id='.$wiersz['id'].'">'.$wiersz['id'].'</a>'.'</td>';
 								echo '<td class="col-3">'.$wiersz['tytul'].'</td>';
 								echo '<td class="col-4"><img src="media/user/'.$wiersz['sciezka'].'" alt="proboszcz" class="img-fluid"/></td>';
 								echo '<td class="col-3">'.$wiersz['tresc'].'</td>';
 								echo '</tr>';
-						  }					  						
+							}					  						
 echo<<<END
 						</table>
 END;
+								
+						echo '<div class="mt-1 mb-1">';
+						for($strona=1; $strona <= $ile_stron; $strona++)
+						{
+							echo '<a href="zdjecia?strona='.$strona.'"><button class="btn bg-light"><b>'.$strona.'</b></button><a/>';
+						}
+						echo '</div>';
 				
 						$polaczenie->close();
 					}
