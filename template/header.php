@@ -1,6 +1,5 @@
 <?php
 echo<<<END
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,6 +13,5 @@ echo<<<END
     <link rel="stylesheet" type="text/css" href="static/glowny.css">
 
     <title>Oficjalna strona Parafii Św. Apostołów Piotra i Pawła w Bydgoszczy</title>
-
 END;
 ?>

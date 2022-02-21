@@ -10,15 +10,15 @@
 <html lang="pl">
 
 	<head>
-		<?php include 'header.php'; ?>
+		<?php include 'template/header.php'; ?>
 	</head>
 
     <body>
 	
-		<?php include 'menu.php'; ?>
+		<?php include 'template/menu.php'; ?>
 
         <main class="container">
-			<?php include 'scrollup.php'; ?>
+			<?php include 'template/scrollup.php'; ?>
 			
 			<div class="bg-light mt-1 content text-center mb-1">
 <?php
@@ -53,7 +53,7 @@
 						$_SESSION['e_regulamin'] = "Zaakceptuj politykę bezpieczeństwa";
 					}
 
-					require_once "connect.php";
+					require_once "template/connect.php";
 					mysqli_report(MYSQLI_REPORT_STRICT);
 					try
 					{
@@ -141,10 +141,10 @@
 							unset($_SESSION['e_regulamin']);
 						}
 					?>
-					<input type="submit" value="Rejestruj" class="mt-1 mb-1"/>
+					<input type="submit" value="Rejestruj" class="mt-1 mb-1 font-weight-bold btn btn-warning"/>
 				</form>
 			</div>
         </main>
 
-		<?php include 'footer.php'; ?>
+		<?php include 'template/footer.php'; ?>
     </body>

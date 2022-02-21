@@ -2,17 +2,17 @@
 <html lang="pl">
 
 	<head>
-		<?php include 'header.php'; ?>
+		<?php include 'template/header.php'; ?>
 	</head>
 
     <body>
 	
-		<?php include 'menu.php'; ?>
+		<?php include 'template/menu.php'; ?>
 
         <main class="container">
-			<?php include 'scrollup.php'; ?>
+			<?php include 'template/scrollup.php'; ?>
 			
-			<h3 class="bg-light mt-1 mb-5 content2 p-5">
+			<h3 class="bg-light mt-1 mb-1 content2 p-5">
 				
 				<div class="row">
 					<h2 class="col-12 text-center mt-3">Proboszcz</h2>
@@ -53,5 +53,5 @@
 			</h3>
         </main>
 
-		<?php include 'footer.php'; ?>
+		<?php include 'template/footer.php'; ?>
     </body>

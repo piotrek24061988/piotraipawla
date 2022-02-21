@@ -4,8 +4,8 @@
 	
 	if((!isset($_GET['id'])) || (!isset($_SESSION['user']))) 
 	{
-		$_SESSION['zdjecia'] = '<div class="text-danger"><b>nie masz uprawnień do kasowania</b></div>';
-		header('Location: zdjecia');
+		$_SESSION['biezace'] = '<div class="text-danger"><b>nie masz uprawnień do kasowania</b></div>';
+		header('Location: ogloszeniaBiezace');
 		exit();
 	}
 	
@@ -21,18 +21,18 @@
 	{
 		$id = $_GET['id'];
 		
-		$sql = 'DELETE FROM zdjecia WHERE id='.$id;
+		$sql = 'DELETE FROM ogloszenia WHERE id='.$id;
 		
 		if($rezultat = @$polaczenie->query($sql))
 
 		{
-			$_SESSION['zdjecia'] = '<div class="text-success"><b>wykasowano zdjęcie</b></div>';
+			$_SESSION['biezace'] = '<div class="text-success"><b>wykasowano ogłoszenie</b></div>';
 		} else {
-			$_SESSION['zdjecia'] = '<div class="text-danger"><b>nie wykasowano zdjęcia - błąd serwera</b></div>';
+			$_SESSION['biezace'] = '<div class="text-danger"><b>nie wykasowano ogłoszenia - błąd serwera</b></div>';
 		}
 		
 		$polaczenie->close();
 		
-		header('Location: zdjecia');
+		header('Location: ogloszeniaBiezace');
 	}
 ?>

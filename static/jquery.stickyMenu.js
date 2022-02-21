@@ -5,11 +5,11 @@ $(function($)
 	var stickyNav = function(){
 	var ScrollY = $(window).scrollTop();
 		  
-	if (ScrollY > NavY) { 
+	if (ScrollY > NavY + 20) { 
 		$('nav').addClass('fixed-top');
 		console.log("scroled bellow");
 	} 
-	else {
+	else if(ScrollY < NavY - 20) {
 		$('nav').removeClass('fixed-top'); 
 		console.log("scrolling above");
 	}

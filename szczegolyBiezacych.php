@@ -1,7 +1,7 @@
 <?php
 	if(!isset($_GET['id']))
 	{
-		header('Location: zdjecia');
+		header('Location: ogloszeniaBiezace');
 	}
 ?>
 <!DOCTYPE HTML>
@@ -18,7 +18,7 @@
         <main class="container">
 			<?php include 'template/scrollup.php'; ?>
 			
-			<div class="bg-light mt-1 text-center">
+			<div class="bg-light mt-1 text-center content2">
 			<?php
 				require_once "template/connect.php";
 				mysqli_report(MYSQLI_REPORT_STRICT);
@@ -28,32 +28,36 @@
 					if(($polaczenie->connect_errno == 0) && isset($_GET['id']))
 					{
 						$id = $_GET['id'];
-						$sql = "SELECT * FROM zdjecia WHERE id=".$id;	
+						$sql = "SELECT * FROM ogloszenia WHERE id=".$id;	
 						$rezultat = @$polaczenie->query($sql);
 
 						if(!$rezultat) throw new Exception($polaczenie->error);
 
 						$ile_zdjec = $rezultat->num_rows;
 echo<<<END
-						<table class="d-flex align-items-center justify-content-center">
-							<!--<tr class="row">
-								<th class="col-2">Id:</th>
-								<th class="col-8">zdjecie:</th>
-								<th class="col-2">tytul:</th>
+						<table class="d-flex align-items-center justify-content-center mb-1">
+							<!--<tr class="row mb-5">
+								<th class="col-4">Id:</th>
+								<th class="col-4">tytul:</th>
+								<th class="col-4">czas:</th>
 							</tr>-->
 END;
 						if($wiersz = $rezultat->fetch_assoc())
 						{
-							echo '<tr class="row">';
-							echo '<td class="col-12"><b>'.$wiersz['tytul'].'</b></td>';
+							echo '<tr class="row mt-1">';
+							//echo '<td class="col-4">'.$wiersz['id'].'</td>';
+							echo '<td class="col-4"></td>';
+							echo '<td class="col-4"><b>'.$wiersz['tytul'].'</b></td>';
+							echo '<td class="col-4">'.$wiersz['czas'].'</td>';
 							echo '</tr>';
-							echo '<tr class="row p-5">';
-							//echo '<td class="col-2">'.$wiersz['id'].'</td>';
-							echo '<td class="col-12"><img src="media/user/'.$wiersz['sciezka'].'" alt="proboszcz" class="img-fluid"/></td>';
-							//echo '<td class="col-2">'.$wiersz['tytul'].'</td>';
-							echo '</tr>';
+							if($wiersz['zdjecie'])
+							{
+								echo '<tr class="row">';
+								echo '<td class="col-12 p-5">'.'<img src="media/user/'.$wiersz['zdjecie'].'" alt="'.$wiersz['tytul'].'" class="img-fluid"/></td>';
+								echo '</tr>';
+							}
 							echo '<tr class="row mb-5">';
-							echo '<td class="col-12">'.$wiersz['tresc'].'</td>';
+							echo '<td class="col-12 px-5 text-left textareatext"><h3>'.$wiersz['tresc'].'</h3></td>';
 							echo '</tr>';
 						}	
 
@@ -61,12 +65,12 @@ END;
 						{
 							echo '<tr class="row">';
 							echo '<td class="col-6">';
-							echo '<form action="kasujZdjecie?id='.$id.'" method="post">';
+							echo '<form action="kasujOgloszenie?id='.$id.'" method="post">';
 							echo '<input type="submit" value="kasuj" class="mt-1 mb-1 btn btn-danger text-dark font-weight-bold"/>';
 							echo '</form>';
 							echo '</td>';
 							echo '<td class="col-6">';
-							echo '<form action="aktualizujZdjecie?id='.$id.'" method="post">';
+							echo '<form action="aktualizujOgloszenie?id='.$id.'" method="post">';
 							echo '<input type="submit" value="aktualizuj" class="mt-1 mb-1 btn btn-warning font-weight-bold"/>';
 							echo '</form>';
 							echo '</td>';

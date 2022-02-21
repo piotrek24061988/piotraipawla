@@ -2,17 +2,17 @@
 <html lang="pl">
 
 	<head>
-		<?php include 'header.php'; ?>
+		<?php include 'template/header.php'; ?>
 	</head>
 
     <body>
 	
-		<?php include 'menu.php'; ?>
+		<?php include 'template/menu.php'; ?>
 
         <main class="container">
-			<?php include 'scrollup.php'; ?>
+			<?php include 'template/scrollup.php'; ?>
 			
-			<h3 class="bg-light mt-1 mb-5 content2 p-5 text-center">
+			<h3 class="bg-light mt-1 mb-1 content2 p-5 text-center">
 				
 				<b>Parafia pw. Św. Apostołów Piotra i Pawła</b><br/>
 				85-007 Bydgoszcz<br/>
@@ -27,7 +27,7 @@
 				tel. 887 098 787<br/>
 				<br/>
 				<b>W internecie:</b><br/>
-				strona internetowa <a href="http://piotraipawla.pl" target="_blank"">http://piotraipawla.pl</a><br/>
+				strona internetowa <a href="http://piotraipawla.pl" target="_blank"" class="nodecoration">http://piotraipawla.pl</a><br/>
 				email pip@gmail.com<br/>
 				<br/>
 				<b>Konto Bankowe:</b><br/>
@@ -37,5 +37,5 @@
 			</h3>
         </main>
 
-		<?php include 'footer.php'; ?>
+		<?php include 'template/footer.php'; ?>
     </body>

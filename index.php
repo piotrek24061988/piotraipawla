@@ -2,19 +2,19 @@
 <html lang="pl">
 
 	<head>
-		<?php include 'header.php'; ?>
+		<?php include 'template/header.php'; ?>
 	</head>
 
     <body>
 	
-		<?php include 'menu.php'; ?>
+		<?php include 'template/menu.php'; ?>
 
         <main class="container" style="min-height: 100vh;">
-			<?php include 'scrollup.php'; ?>
-			<?php include 'mousemove.php'; ?>
+			<?php include 'template/scrollup.php'; ?>
+			<?php include 'template/mousemove.php'; ?>
         </main>
 
-		<?php include 'footer.php'; ?>
+		<?php include 'template/footer.php'; ?>
     </body>
 
 </html>

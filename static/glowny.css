@@ -79,3 +79,17 @@ body {
 .hidden {
     display: none;
 }
+
+.textareatext {
+	white-space: pre-line;
+}
+
+.nodecoration {
+	text-decoration: none;
+	color: black;
+}
+
+.nodecoration:hover {
+	color: black;
+	text-decoration: none;
+}

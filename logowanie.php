@@ -11,15 +11,15 @@
 <html lang="pl">
 
 	<head>
-	<?php include 'header.php'; ?>
+	<?php include 'template/header.php'; ?>
 </head>
 
     <body>
 	
-		<?php include 'menu.php'; ?>
+		<?php include 'template/menu.php'; ?>
 
         <main class="container">
-			<?php include 'scrollup.php'; ?>
+			<?php include 'template/scrollup.php'; ?>
 			
 			<div class="bg-light mt-1 content text-center">
 <?php
@@ -34,10 +34,10 @@
 				<form action="zaloguj.php" method="post">
 					<b>Login:</b></br> <input type="text" name="login"/> </br> 
 					<b>Hasło:</b></br> <input type="password" name="haslo"/> </br> 
-					<input type="submit" value="Zaloguj się" class="mt-1 mb-1"/>
+					<input type="submit" value="Zaloguj się" class="mt-1 mb-1 btn btn-warning font-weight-bold"/>
 				</form>
 			</div>
         </main>
 
-		<?php include 'footer.php'; ?>
+		<?php include 'template/footer.php'; ?>
     </body>

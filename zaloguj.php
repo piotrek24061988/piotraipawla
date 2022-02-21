@@ -7,7 +7,7 @@
 		exit();
 	}
 
-	require_once "connect.php";
+	require_once "template/connect.php";
 	
 	$polaczenie = @new mysqli($host, $db_user, $db_password, $db_name);
 	
@@ -38,8 +38,10 @@
 				{
 					$user = $wiersz['name'];
 					$email = $wiersz['email'];
+					$id = $wiersz['id'];
 					$_SESSION['user'] = $user;
 					$_SESSION['email'] = $email;
+					$_SESSION['user_id'] = $id;
 					echo "zalogowano jako ".$wiersz['user'];
 				
 					$rezultat->close();
@@ -60,5 +62,4 @@
 		
 		$polaczenie->close();
 	}
-
 ?>

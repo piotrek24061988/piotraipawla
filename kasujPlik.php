@@ -4,8 +4,8 @@
 	
 	if((!isset($_GET['id'])) || (!isset($_SESSION['user']))) 
 	{
-		$_SESSION['zdjecia'] = '<div class="text-danger"><b>nie masz uprawnień do kasowania</b></div>';
-		header('Location: zdjecia');
+		$_SESSION['pliki'] = '<div class="text-danger"><b>nie masz uprawnień do kasowania</b></div>';
+		header('Location: pliki');
 		exit();
 	}
 	
@@ -21,18 +21,18 @@
 	{
 		$id = $_GET['id'];
 		
-		$sql = 'DELETE FROM zdjecia WHERE id='.$id;
+		$sql = 'DELETE FROM pliki WHERE id='.$id;
 		
 		if($rezultat = @$polaczenie->query($sql))
 
 		{
-			$_SESSION['zdjecia'] = '<div class="text-success"><b>wykasowano zdjęcie</b></div>';
+			$_SESSION['pliki'] = '<div class="text-success"><b>wykasowano plik</b></div>';
 		} else {
-			$_SESSION['zdjecia'] = '<div class="text-danger"><b>nie wykasowano zdjęcia - błąd serwera</b></div>';
+			$_SESSION['pliki'] = '<div class="text-danger"><b>nie wykasowano pliku - błąd serwera</b></div>';
 		}
 		
 		$polaczenie->close();
 		
-		header('Location: zdjecia');
+		header('Location: pliki');
 	}
 ?>
