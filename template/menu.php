@@ -13,37 +13,38 @@ echo<<<END
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
-				<button class="navbar-toggler mr-auto ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon">
-						<img style="width: auto; height: 100%;" src="media/pp.jpg" alt="przycisk rozwijanej nawigacji"/>
+				<button class="navbar-toggler mr-auto ml-auto w-100 border-dark" style="border-width:2px" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+					<h3 class="text-dark">MENU</h3>
+					<span class="navbar-toggler-icon my-1">
+						<!--<img style="width: 100%; height: 100%;" src="media/pp.jpg" alt="przycisk rozwijanej nawigacji"/>-->
 					</span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarToggle">
 					<div class="navbar-nav mr-auto ml-auto">
-						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="domowa">Głowna</a>
+						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="domowa"><h3>Głowna</h3></a>
 						<div class="nav-item dropdown">
 							<button class="btn btn-light w-100 mx-1 font-weight-bold" id="subnav" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Parafia
+								<h3>Parafia</h3>
 							</button>
 							<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
-								<a class="dropdown-item bg-light font-weight-bold" href="kontakt">Kontakt</a>
-								<a class="dropdown-item bg-light font-weight-bold" href="biuro">Biuro</a>
-								<a class="dropdown-item bg-light font-weight-bold" href="parafia">Historia</a>
-								<a class="dropdown-item bg-light font-weight-bold" href="duchowni">Duchowieństwo</a>
+								<a class="dropdown-item bg-light font-weight-bold" href="kontakt"><h3>Kontakt</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="biuro"><h3>Biuro</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="parafia"><h3>Historia</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="duchowni"><h3>Duchowieństwo</h3></a>
 							</div>
 						</div>
 						<div class="nav-item dropdown">
 							<button class="btn btn-light w-100 mx-1 font-weight-bold" id="subnav" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Ogłoszenia
+								<h3>Ogłoszenia</h3>
 							</button>
 							<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
-								<a class="dropdown-item bg-light font-weight-bold" href="ogloszeniaStale">Stałe</a>
-								<a class="dropdown-item bg-light font-weight-bold" href="ogloszeniaBiezace">Bieżące</a>
+								<a class="dropdown-item bg-light font-weight-bold" href="ogloszeniaStale"><h3>Stałe</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="ogloszeniaBiezace"><h3>Bieżące</h3></a>
 END;
 								if(isset($_SESSION['user']))
 								{
 echo<<<END
-								<a class="dropdown-item bg-light font-weight-bold" href="dodajOgloszenie">Dodaj bieżące</a>
+								<a class="dropdown-item bg-light font-weight-bold" href="dodajOgloszenie"><h3>Dodaj bieżące</h3></a>
 END;
 								}
 echo<<<END
@@ -51,24 +52,24 @@ echo<<<END
 						</div>
 						<div class="nav-item dropdown">
 							<button class="btn btn-light w-100 mx-1 font-weight-bold" id="subnav" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Pliki
+								<h3>Pliki</h3>
 							</button>
 							<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
-								<a class="dropdown-item bg-light font-weight-bold" href="zdjecia">Zdjecia</a>
+								<a class="dropdown-item bg-light font-weight-bold" href="zdjecia"><h3>Zdjecia</h3></a>
 END;
 								if(isset($_SESSION['user']))
 								{
 echo<<<END
-								<a class="dropdown-item bg-light font-weight-bold" href="dodajZdjecie">Dodaj zdjęcie</a>
+								<a class="dropdown-item bg-light font-weight-bold" href="dodajZdjecie"><h3>Dodaj zdjęcie</h3></a>
 END;
 								}
 echo<<<END
-								<a class="dropdown-item bg-light font-weight-bold" href="pliki">Pliki do pobrania</a>
+								<a class="dropdown-item bg-light font-weight-bold" href="pliki"><h3>Do pobrania</h3></a>
 END;
 								if(isset($_SESSION['user']))
 								{
 echo<<<END
-								<a class="dropdown-item bg-light font-weight-bold" href="dodajPlik">Dodaj plik</a>
+								<a class="dropdown-item bg-light font-weight-bold" href="dodajPlik"><h3>Dodaj plik</h3></a>
 END;
 								}
 echo<<<END
@@ -76,30 +77,30 @@ echo<<<END
 						</div>
 						<div class="nav-item dropdown">
 							<button class="btn btn-light w-100 mx-1 font-weight-bold" id="subnav" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Sakramenty
+								<h3>Sakramenty</h3>
 							</button>
 							<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
-								<a class="dropdown-item bg-light font-weight-bold" href="chrzest">Chrzest</a>
-								<a class="dropdown-item bg-light font-weight-bold" href="eucharystia">Eucharystia</a>
-								<a class="dropdown-item bg-light font-weight-bold" href="pokuta">Pokuta</a>
-								<a class="dropdown-item bg-light font-weight-bold" href="malzenstwo">Małżeństwo</a>
-								<a class="dropdown-item bg-light font-weight-bold" href="bierzmowanie">Bierzmowanie</a>
-								<a class="dropdown-item bg-light font-weight-bold" href="pogrzeb">Pogrzeb</a>
+								<a class="dropdown-item bg-light font-weight-bold" href="chrzest"><h3>Chrzest</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="eucharystia"><h3>Eucharystia</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="pokuta"><h3>Pokuta</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="malzenstwo"><h3>Małżeństwo</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="bierzmowanie"><h3>Bierzmowanie</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="pogrzeb"><h3>Pogrzeb</h3></a>
 							</div>
 						</div>
 						<div class="nav-item dropdown">
 							<button class="btn btn-light w-100 mx-1 font-weight-bold" id="subnav" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Stowarzyszenia
+								<h3>Stowarzyszenia</h3>
 							</button>
 							<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
-								<a class="dropdown-item bg-light font-weight-bold" href="akcjaKatolicka">Akcja Katolicka</a>
+								<a class="dropdown-item bg-light font-weight-bold" href="akcjaKatolicka"><h3>Akcja Katolicka</h3></a>
 							</div>
 						</div>
 END;
 						if(!isset($_SESSION['user']))
 						{
 echo<<<END
-						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="logowanie">Logowanie</a>
+						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="logowanie"><h3>Logowanie</h3></a>
 END;
 						}
 						else
@@ -107,12 +108,12 @@ END;
 echo<<<END
 						<div class="nav-item dropdown">
 							<button class="btn btn-light w-100 mx-1 font-weight-bold" id="subnav" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Administracja
+								<h3>Administracja</h3>
 							</button>
 							<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
-								<a class="dropdown-item bg-light font-weight-bold" href="rejestracja">Rejestracja</a>
-								<a class="dropdown-item bg-light font-weight-bold" href="admini">Administratorzy</a>
-								<a class="dropdown-item bg-light font-weight-bold" href="wyloguj">Wylogowanie</a>
+								<a class="dropdown-item bg-light font-weight-bold" href="rejestracja"><h3>Rejestracja</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="admini"><h3>Administratorzy</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="wyloguj"><h3>Wylogowanie</h3></a>
 							</div>
 						</div>
 END;

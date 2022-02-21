@@ -44,7 +44,7 @@ END;
 							{
 								echo '<tr class="row">';
 								//echo '<td class="col-1">'.$wiersz['id'].'</td>';
-								echo '<td class="col-9 textareatext">'.$wiersz['text'].'</td>';
+								echo '<td class="col-9 textareatext"><h3>'.$wiersz['text'].'</h3></td>';
 								echo '<td class="col-3 font-weight-normal">'.$wiersz['czas'].'</td>';
 								echo '</tr>';
 								
