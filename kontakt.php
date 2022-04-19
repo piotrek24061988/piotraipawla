@@ -27,8 +27,8 @@
 				tel. 887 098 787<br/>
 				<br/>
 				<b>W internecie:</b><br/>
-				strona internetowa <a href="http://piotraipawla.pl" target="_blank"" class="nodecoration">http://piotraipawla.pl</a><br/>
-				email pip@gmail.com<br/>
+				strona internetowa tymczasowa: <a href="https://piotraipawla.bydgoszcz.pl" target="_blank"" class="nodecoration">https://piotraipawla.bydgoszcz.pl</a><br/>
+				email: ryszardszymkowiak@wp.pl<br/>
 				<br/>
 				<b>Konto Bankowe:</b><br/>
 				Bank PKO S.A. II O/Bydgoszcz<br/>

@@ -31,13 +31,13 @@
 					<br/>
 					<h3><b>Spotkania dla kandydatów odbywają się:</b><br/>
 					Klasy I gimnazjum – w Adwencie i Wielkim Poście<br/>
-					Klasy II gimnazjum – w pierwszą środę miesiąca o godz. 19.00<br/>
-					Klasy III gimnazjum – w drugą środę miesiąca o godz. 19.00<br/>
+					Klasy II gimnazjum – w pierwszą środę miesiąca o godz. 19:00<br/>
+					Klasy III gimnazjum – w drugą środę miesiąca o godz. 19:00<br/>
 					Wszystkie spotkania odbywają się w kościele. Obecność wszystkich obowiązkowa.<br/>
 					</h3>
 
 					<br/>
-					<h3>Wszystkie sprawy związane z sakramentem są załatwiane w piątki w biurze naszej parafii w godzinach od 16.00 do 17.00.</h3>
+					<h3>Wszystkie sprawy związane z sakramentem są załatwiane w piątki w biurze naszej parafii w godzinach od 16:00 do 17:00.</h3>
 
 					<br/>
 					<h3><b>Zasady kandydata do bierzmowania:</b><br/>

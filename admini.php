@@ -22,6 +22,8 @@
 			
 			<div class="bg-light mt-1 content text-center">
 			<?php
+				echo "<p>Obecna data: ".date('Y-m-d H:i:s')."</p>";
+			
 				echo "<p><b>Zalogowany jako: ".$_SESSION['user']."</b></p>";
 
 				require_once "template/connect.php";
@@ -37,7 +39,9 @@
 						if(!$rezultat) throw new Exception($polaczenie->error);
 
 						$ile_adminow = $rezultat->num_rows;
-						echo "<p><b>ilość adminów: ".$ile_adminow."</b><p>";	
+						
+						echo "</br>";
+						echo "<p><b>ilość adminów: ".$ile_adminow."</b></p>";	
 echo<<<END
 						<table class="d-flex align-items-center justify-content-center">
 							<tr class="row">
@@ -49,6 +53,27 @@ END;
 						  while($wiersz = $rezultat->fetch_assoc())
 						  {
 								echo '<tr class="row"><td class="col-1">'.$wiersz['id'].'</td><td class="col-4">'.$wiersz['name'].'</td><td class="col-7">'.$wiersz['email']."</td></tr>";
+						  }					  						
+echo<<<END
+						</table>
+END;
+						$sql = "SELECT * FROM logowania ORDER BY id DESC LIMIT 10";	
+						$rezultat = @$polaczenie->query($sql);
+
+						if(!$rezultat) throw new Exception($polaczenie->error);
+						
+echo<<<END
+						</br></br>
+						<p><b>ostatnie logowania:</b></p>
+						<table class="d-flex align-items-center justify-content-center">
+							<tr class="row">
+								<th class="col-6">Id:</th>
+								<th class="col-6">Time:</th>
+							</tr>
+END;
+						  while($wiersz = $rezultat->fetch_assoc())
+						  {
+								echo '<tr class="row"><td class="col-6">'.$wiersz['kto'].'</td><td class="col-6">'.$wiersz['kiedy'].'</td></tr>';
 						  }					  						
 echo<<<END
 						</table>

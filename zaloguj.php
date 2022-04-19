@@ -43,6 +43,9 @@
 					$_SESSION['email'] = $email;
 					$_SESSION['user_id'] = $id;
 					echo "zalogowano jako ".$wiersz['user'];
+					
+					$sql = sprintf("INSERT INTO logowania VALUES (NULL, '$id', CURRENT_TIMESTAMP)"); 
+					@$polaczenie->query($sql);
 				
 					$rezultat->close();
 					header('Location: uzytkownik');		

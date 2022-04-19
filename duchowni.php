@@ -25,8 +25,8 @@
 				</div>
 
 				<div class="row">
-					<h2 class="col-12 text-center mt-5 mb-1">Prymariusz</h2>
-					<img src="media/prymicjusz.jpg" alt="prymariusz" class="col-12 col-md-3"/>
+					<h2 class="col-12 text-center mt-5 mb-1">Wikariusz</h2>
+					<img src="media/prymicjusz.jpg" alt="wikariusz" class="col-12 col-md-3"/>
 					<p class="col-12 col-md-9 justify-content-center d-flex align-items-center">
 						Ks. mgr lic Maciej Tyckun</br>
 						wyświęcony: 18.05.2002, Gniezno</br>
@@ -46,7 +46,7 @@
 						imieniny: 18 września</br>
 						ustanowiony: 2020</br>
 						ul. Krasińskiego 11/1, 85-008 Bydgoszcz</br>
-						tel. kom. 887 09 87 8</br>
+						tel. kom. 887 09 87 87</br>
 					</p>
 				</div>
 

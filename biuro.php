@@ -37,7 +37,7 @@
 				KAPŁAN DYŻURNY - 887 098 787<br/>
 				<br/>
 				<b>Pary narzeczonych:</b><br/>
-				Trzy miesiące przed ślubem zgłaszają się w biurze naszej parafii w poniedziałek o godzinie 17.00<br/>
+				Trzy miesiące przed ślubem zgłaszają się w biurze naszej parafii.<br/>
 			</h3>
         </main>
 
