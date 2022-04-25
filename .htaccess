@@ -27,6 +27,7 @@ RewriteRule szczegolyBiezacych szczegolyBiezacych.php
 RewriteRule kasujOgloszenie kasujOgloszenie.php
 RewriteRule dodajOgloszenie dodajOgloszenie.php
 RewriteRule aktualizujOgloszenie aktualizujOgloszenie.php
+RewriteRule newsletter newsletter.php
 RewriteRule pliki pliki.php
 RewriteRule dodajPlik dodajPlik.php
 RewriteRule kasujPlik kasujPlik.php

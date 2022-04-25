@@ -40,6 +40,7 @@ echo<<<END
 							<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
 								<a class="dropdown-item bg-light font-weight-bold" href="ogloszeniaStale"><h3>Stałe</h3></a>
 								<a class="dropdown-item bg-light font-weight-bold" href="ogloszeniaBiezace"><h3>Bieżące</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="newsletter"><h3>Newsletter</h3></a>
 END;
 								if(isset($_SESSION['user']))
 								{

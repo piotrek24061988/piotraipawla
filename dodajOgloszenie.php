@@ -81,6 +81,25 @@
 										if($rezultat)
 										{
 											echo '<div class="col-12 text-center text-success"><b>Ogłoszenie dodane do bazy danych</b></div>';
+											
+											require_once "template/emails.php";
+											$sql = "SELECT * FROM newsletter";	
+											$rezultat = @$polaczenie->query($sql);
+											if(!$rezultat) throw new Exception($polaczenie->error);
+											$headers = array(
+												'From' => $email_pip,
+												'Reply-To' => $email_pip,
+												'Content-type' => 'text/plain; charset=utf-8',
+												'X-Mailer' => 'PHP/' . phpversion()
+											);
+											while($wiersz = $rezultat->fetch_assoc())
+											{									
+												$status = mail($wiersz['email'], $title, $description, $headers);
+												if($status)
+												{
+													echo '<div class="col-12 text-center text-success"><b>Newsletter wysłany do: '.$wiersz['email'].'</b></div>';
+												}
+											}
 										}
 										else
 										{
