@@ -5,11 +5,11 @@
 echo<<<END
 	<header class="site-header col-12">
 		<div class="row topcontent bg-light">
-			<img src="media/pip5.jpg" alt="ołtarz" class="col-12 col-md-2 bg-light topimg"/>
-			<div class="col-12 col-md-8 bg-light d-flex align-items-center justify-content-center">
+			<img src="media/Piotr.jpg" alt="Apostoł Piotr" class="col-12 col-md-1 bg-light topimg"/>
+			<div class="col-12 col-md-10 bg-light d-flex align-items-center justify-content-center">
 			<h2><b>Parafia pw. Św. Apostołów Piotra i Pawła w Bydgoszczy</b></h2>
 			</div>
-			<img src="media/pip4.jpg" alt="ołtarz" class="col-12 col-md-2 bg-light topimg"/>
+			<img src="media/Pawel.jpg" alt="Apostoł Paweł" class="col-12 col-md-1 bg-light topimg"/>
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
@@ -21,7 +21,28 @@ echo<<<END
 				</button>
 				<div class="collapse navbar-collapse" id="navbarToggle">
 					<div class="navbar-nav mr-auto ml-auto">
-						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="domowa"><h3>Głowna</h3></a>
+END;
+					if(!isset($_SESSION['user']))
+					{
+echo<<<END
+						<a class="btn btn-light w-100 mx-1 font-weight-bold" href="domowa"><h3>Główna</h3></a>
+END;
+					}
+					else {
+echo<<<END
+						<div class="nav-item dropdown">
+							<button class="btn btn-light w-100 mx-1 font-weight-bold" id="subnav" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<h3>Główna</h3>
+							</button>
+							<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
+								<a class="dropdown-item bg-light font-weight-bold" href="domowa"><h3>Domowa</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="aktualnosci"><h3>Aktualności</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="dodajAktualnosci"><h3>Dodaj Aktualności</h3></a>
+							</div>
+						</div>
+END;
+					}
+echo<<<END
 						<div class="nav-item dropdown">
 							<button class="btn btn-light w-100 mx-1 font-weight-bold" id="subnav" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<h3>Parafia</h3>

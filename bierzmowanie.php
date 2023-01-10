@@ -26,7 +26,7 @@
 					</h3>
 
 					<br/>
-					<h3>W naszej parafii przygotowanie do Sakramentu Bierzmowania obejmuje klasy I, II i III gimnazjum.</h3> 
+					<h3>W naszej parafii przygotowanie do Sakramentu Bierzmowania obejmuje ostatnie roczniki szkoły podstawowej.</h3> 
 
 					<br/>
 					<h3><b>Spotkania dla kandydatów odbywają się:</b><br/>

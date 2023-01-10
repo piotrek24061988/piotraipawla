@@ -67,7 +67,18 @@
 				<h3><label for="description">Treść:</label></h3>
 				<textarea rows="8" style="width: 100%;" name="description"></textarea>
 				<input type="submit" value="Wyślij wiadomość" name="submit" class="mt-1 mb-1 btn btn-warning font-weight-bold"/>
+				<h6>*W przypadku korzystania z formularza kontaktowego zaleca się dopisywać dane do kontaktu zwrotnego.</h6>
+				<h6>*Staramy się ustosunkowywać do zgłaszanych błędów, usterek i sugestii dotyczących strony internetowej.</h6>
+
 			</form>
+
+			<h5 class="bg-light content2 text-center">
+				autor:
+				<a href="https://www.twojkomputerowiec.bydgoszcz.pl" target="_blank"" class="nodecoration">
+					<img src="media/PG.png" alt="Piotr Górecki" class="bg-light mylogo"/>Piotr Górecki
+				</a>
+			</h5>
+
         </main>
 
 		<?php include 'template/footer.php'; ?>

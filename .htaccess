@@ -38,3 +38,9 @@ RewriteRule malzenstwo malzenstwo.php
 RewriteRule bierzmowanie bierzmowanie.php
 RewriteRule pogrzeb pogrzeb.php
 RewriteRule akcjaKatolicka akcjaKatolicka.php
+RewriteRule biuro biuro.php
+RewriteRule aktualnosci aktualnosci.php
+RewriteRule dodajAktualnosci dodajAktualnosci.php
+RewriteRule kasujAktualnosci kasujAktualnosci.php
+RewriteRule aktualizujAktualnosci aktualizujAktualnosci.php
+RewriteRule szczegolyAktualnosci szczegolyAktualnosci.php

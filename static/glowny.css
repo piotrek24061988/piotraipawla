@@ -23,15 +23,15 @@ body {
 }
 
 .glownezdjecia {
-    width: 480px;
-    height: 320px;
-	width: 40vw;
-	height: 44vh;
+    width: 640px;
+    height: 480px;
+	width: 60vw;
+	height: 66vh;
 	position : fixed;
 	border: 10px solid #ffffff;
 	border-radius: 10px;
-    left: 30%;
-    top: 54%;
+    left: 20%;
+    top: 33%;
     display: none;
     z-index:1;
 }
@@ -76,6 +76,10 @@ body {
 	opacity: 0.9;
 }
 
+.content3 {
+	opacity: 0.7;
+}
+
 .hidden {
     display: none;
 }
@@ -92,4 +96,48 @@ body {
 .nodecoration:hover {
 	color: black;
 	text-decoration: none;
+}
+
+#ciag, #fixed
+{
+	display: inline-block;
+	margin-right: 50px;
+}
+
+.odd, .even
+{
+	color: #999;
+}
+
+.ratio
+{
+	color: #FFC851;
+}
+
+.mylogo
+{
+	width: 30px;
+	height: 30px;
+}
+
+.news-img
+{
+	width: 60vw;
+	height: 60vh;
+}
+
+@media (max-width: 900px) {
+	.news-img
+	{
+		width: 80vw;
+		height: 30vh;
+	}
+	
+	.glownezdjecia
+	{
+		width: 80vw;
+		height: 42vh;
+		left: 10%;
+		top: 50%;
+	}
 }

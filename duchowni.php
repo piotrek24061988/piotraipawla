@@ -15,7 +15,7 @@
 			<h3 class="bg-light mt-1 mb-1 content2 p-5">
 				
 				<div class="row">
-					<h2 class="col-12 text-center mt-3">Proboszcz</h2>
+					<h2 class="col-12 text-center mt-3"><b>Proboszcz</b></h2>
 					<img src="media/proboszcz.jpg" alt="proboszcz" class="col-12 col-md-3"/>
 					<p class="col-12 col-md-9 justify-content-center d-flex align-items-center">
 						Ks. Ryszard Szymkowiak <br/>
@@ -23,6 +23,34 @@
 						tel. /0-52/ 328-64-80
 					</p>
 				</div>
+				
+				<div class="row">
+					<h2 class="col-12 text-center mt-5">Wikariusz</h2>
+					<img src="media/wikariusz2.jpg" alt="proboszcz" class="col-12 col-md-3"/>
+					<p class="col-12 col-md-9 justify-content-center d-flex align-items-center">
+						Ks. Piotr Buczkowski <br/>
+						ul. Krasińskiego 11/1, 85-008 Bydgoszcz<br/> 
+						tel. kom. 887 09 87 87
+					</p>
+				</div>
+				
+				<div class="row">
+					<h2 class="col-12 text-center mt-5">Wikariusz</h2>
+					<img src="media/wikariusz3.png" alt="proboszcz" class="col-12 col-md-3"/>
+					<p class="col-12 col-md-9 justify-content-center d-flex align-items-center">
+						Ks. Dariusz Lipiński <br/>
+						ul. Krasińskiego 11/1, 85-008 Bydgoszcz<br/> 
+						tel. kom. 887 09 87 87
+					</p>
+				</div>
+				
+			</h3>
+			
+			<h3 class="bg-light mt-1 mb-1 content3 p-5">
+			
+			<div class="row">
+					<h2 class="col-12 text-center"><b>Do lipca 2022r.</b></h2>
+			</div>
 
 				<div class="row">
 					<h2 class="col-12 text-center mt-5 mb-1">Wikariusz</h2>
@@ -31,9 +59,7 @@
 						Ks. mgr lic Maciej Tyckun</br>
 						wyświęcony: 18.05.2002, Gniezno</br>
 						imieniny: 24 luty</br>
-						ustanowiony: 2018</br>
-						ul. Krasińskiego 11/1, 85-008 Bydgoszcz</br>
-						tel. kom. 887 09 87 87</br>
+						Z dniem 30 czerwca 2022 roku mianowany proboszczem parafii pw. św. Jana Pawła II w Bydgoszczy
 					</p>
 				</div>
 
@@ -43,10 +69,7 @@
 					<p class="col-12 col-md-9 justify-content-center d-flex align-items-center">
 						Ks. dr Michał Damazyn</br>
 						wyświęcony: 18.05.2002, Gniezno</br>
-						imieniny: 18 września</br>
-						ustanowiony: 2020</br>
-						ul. Krasińskiego 11/1, 85-008 Bydgoszcz</br>
-						tel. kom. 887 09 87 87</br>
+						Z dniem 30 czerwca 2022 roku mianowany administratorem parafii pw. Niepokalanego Poczęcia NMP w Nieżychowie
 					</p>
 				</div>
 

@@ -20,7 +20,7 @@
 				<p class="text-justify">
 					<h3><b>Msze niedzielne:</b><br/>
 					- sobota 18:30 (liturgia niedzielna)<br/>
-					- niedziela: 7:30, 9:30, 11:00, 12:30, 17:00, 19:00<br/>
+					- niedziela: 7:30, 9:30, 11:00, 12:30, 17:00(II niedziela miesiąca), 19:00<br/>
 					</h3>
 
 					<br/>
@@ -30,7 +30,7 @@
 
 					<br/>
 					<h3><b>Msze św. w dni powszednie:</b><br/>
-					8:00, 17:00 (w czasie kolędy tylko koncelebrowana o godz. 8:00)<br/>
+					8:00, 18:30 (Od listopada do lutego o godzinie 17:00)<br/>
 					</h3>
 
 					<br/>
