@@ -33,7 +33,7 @@
 						$rezultat = @$polaczenie->query($sql);
 						if(!$rezultat) throw new Exception($polaczenie->error);
 						
-						$rezultaty_per_strona = 5;
+						$rezultaty_per_strona = 10;
 						$ile_zdjec = $rezultat->num_rows;
 						$ile_stron = ceil($ile_zdjec / $rezultaty_per_strona);	
 						
@@ -58,16 +58,16 @@ END;
 							{
 								echo '<tr class="row">';
 								//echo '<td class="col-4">'.'<a class="nodecoration" href="szczegolyBiezacych?id='.$wiersz['id'].'">'.$wiersz['id'].'</a></td>';
-								echo '<td class="col-4"></td>';
-								echo '<td class="col-4">'.'<a class="nodecoration" href="szczegolyBiezacych?id='.$wiersz['id'].'"><b>'.$wiersz['tytul'].'</b></a></td>';
-								echo '<td class="col-4">'.$wiersz['czas'].'</td>';
+								//echo '<td class="col-4"></td>';
+								echo '<td class="col-12">'.'<a class="nodecoration" href="szczegolyBiezacych?id='.$wiersz['id'].'"><b>'.$wiersz['tytul'].'</b></a></td>';
+								//echo '<td class="col-4">'.$wiersz['czas'].'</td>';
 								echo '</tr>';
 								if($wiersz['zdjecie'])
 								{
 									echo '<tr class="row">';
-									echo '<td class="col-3"></td>';
-									echo '<td class="col-6">'.'<a class="nodecoration" href="szczegolyBiezacych?id='.$wiersz['id'].'">'.'<img src="media/user/'.$wiersz['zdjecie'].'" alt="'.$wiersz['tytul'].'" class="img-fluid"/></a></td>';
-									echo '<td class="col-3"></td>';
+									echo '<td class="col-1"></td>';
+									echo '<td class="col-10">'.'<a class="nodecoration" href="szczegolyBiezacych?id='.$wiersz['id'].'">'.'<img src="media/user/'.$wiersz['zdjecie'].'" alt="'.$wiersz['tytul'].'" class="img-fluid"/></a></td>';
+									echo '<td class="col-1"></td>';
 									echo '</tr>';
 								}
 								echo '<tr class="row mb-5"><td class="col-12"></td></tr>';

@@ -13,9 +13,24 @@
 			<?php include 'template/scrollup.php'; ?>
 			
 			<h3 class="bg-light mt-1 mb-1 content2 p-5">
+
+			<div class="row">
+					<h5 class="col-12 text-center"><b>
+					Dnia 16 maja 2025 w Kurii Bydgoskiej została podpisana umowa między Diecezją Bydgoską, reprezentowaną przez biskupa Krzysztofa Włodarczyka, a 						Zgromadzeniem Misjonarzy Klaretynów Prowincji Polskiej reprezentowanym przez o. Prowincjała Piotra Bęzę CMF, celem „powierzenia parafii pod 						wezwaniem św. Piotra i Pawła”.
+					</b></h5>
+					<img src="media/klaretyni1.jpg" alt="klaretyni" class="col-12"/>
+			</div>
 				
+			</h3>
+			
+			<h3 class="bg-light mt-1 mb-1 content3 p-5">
+
+			<div class="row">
+					<h2 class="col-12 text-center"><b>Do sierpnia 2025 r.</b></h2>
+			</div>
+
 				<div class="row">
-					<h2 class="col-12 text-center mt-3"><b>Proboszcz</b></h2>
+					<h2 class="col-12 text-center mt-3">Proboszcz</h2>
 					<img src="media/proboszcz.jpg" alt="proboszcz" class="col-12 col-md-3"/>
 					<p class="col-12 col-md-9 justify-content-center d-flex align-items-center">
 						Ks. Ryszard Szymkowiak <br/>
@@ -23,17 +38,37 @@
 						tel. /0-52/ 328-64-80
 					</p>
 				</div>
-				
+
 				<div class="row">
 					<h2 class="col-12 text-center mt-5">Wikariusz</h2>
-					<img src="media/wikariusz2.jpg" alt="proboszcz" class="col-12 col-md-3"/>
+					<img src="media/wikariusz4.jpg" alt="wikariusz" class="col-12 col-md-3"/>
+					<p class="col-12 col-md-9 justify-content-center d-flex align-items-center">
+						Ks. Rafał Wegner <br/>
+						ul. Krasińskiego 11/1, 85-008 Bydgoszcz<br/> 
+						tel. kom. 887 09 87 87
+					</p>
+				</div>
+
+			<div class="row">
+					<h2 class="col-12 text-center"><b>Do września 2024 r.</b></h2>
+			</div>
+
+
+				<div class="row">
+					<h2 class="col-12 text-center mt-5">Wikariusz</h2>
+					<img src="media/wikariusz2.jpg" alt="wikariusz" class="col-12 col-md-3"/>
 					<p class="col-12 col-md-9 justify-content-center d-flex align-items-center">
 						Ks. Piotr Buczkowski <br/>
 						ul. Krasińskiego 11/1, 85-008 Bydgoszcz<br/> 
 						tel. kom. 887 09 87 87
 					</p>
 				</div>
-				
+
+
+			<div class="row">
+					<h2 class="col-12 text-center mt-5"><b>Do września 2023 r.</b></h2>
+			</div>
+
 				<div class="row">
 					<h2 class="col-12 text-center mt-5">Wikariusz</h2>
 					<img src="media/wikariusz3.png" alt="proboszcz" class="col-12 col-md-3"/>
@@ -43,13 +78,9 @@
 						tel. kom. 887 09 87 87
 					</p>
 				</div>
-				
-			</h3>
-			
-			<h3 class="bg-light mt-1 mb-1 content3 p-5">
 			
 			<div class="row">
-					<h2 class="col-12 text-center"><b>Do lipca 2022r.</b></h2>
+					<h2 class="col-12 text-center mt-5"><b>Do lipca 2022 r.</b></h2>
 			</div>
 
 				<div class="row">

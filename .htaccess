@@ -44,3 +44,4 @@ RewriteRule dodajAktualnosci dodajAktualnosci.php
 RewriteRule kasujAktualnosci kasujAktualnosci.php
 RewriteRule aktualizujAktualnosci aktualizujAktualnosci.php
 RewriteRule szczegolyAktualnosci szczegolyAktualnosci.php
+RewriteRule salaKatechetyczna salaKatechetyczna.php

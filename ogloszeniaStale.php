@@ -44,8 +44,8 @@ END;
 							{
 								echo '<tr class="row">';
 								//echo '<td class="col-1">'.$wiersz['id'].'</td>';
-								echo '<td class="col-9 textareatext"><h3>'.$wiersz['text'].'</h3></td>';
-								echo '<td class="col-3 font-weight-normal">'.$wiersz['czas'].'</td>';
+								echo '<td class="col-12 textareatext"><h3>'.$wiersz['text'].'</h3></td>';
+								//echo '<td class="col-3 font-weight-normal">'.$wiersz['czas'].'</td>';
 								echo '</tr>';
 								
 								if(isset($_SESSION['user']))

@@ -19,20 +19,20 @@
 				<h2 class="text-center"><b>Małżeństwo:</b></h2>
 				<p class="text-justify">
 					<h3><b>Sakrament Małżeństwa:</b><br/>
-					Narzeczeni na trzy miesiące przed zawarciem sakramentu małżeństwa zgłaszają się w biurze naszej parafii<br/>
+					Narzeczeni na trzy miesiące przed zawarciem sakramentu małżeństwa zgłaszają się w biurze naszej parafii.<br/>
 					</h3>
 
 					<br/>
 					<h3><b>Niezbędne dokumenty:</b><br/>
-					metryki chrztu<br/>
-					metryki bierzmowania<br/>
-					świadectwo ukończenia katechizacji przedmałżeńskiej<br/>
-					dokumentu z USC do ślubu konkordatowego<br/>
+					- metryki chrztu<br/>
+					- metryki bierzmowania<br/>
+					- świadectwo ukończenia katechizacji przedmałżeńskiej<br/>
+					- dokumentu z USC do ślubu konkordatowego<br/>
 					</h3>
 
 					<br/>
 					<h3><b>Dodatkowo:</b><br/>
-					Narzeczeni odbywają trzy spotkania z kapłanem oraz trzy spotkania w Poradni Życia Rodzinnego
+					Narzeczeni odbywają spotkania z kapłanem oraz spotkania w Poradni Życia Rodzinnego.<br/>
 					</h3> 
 				<p>
 			</div>

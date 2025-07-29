@@ -33,7 +33,7 @@
 						$rezultat = @$polaczenie->query($sql);
 						if(!$rezultat) throw new Exception($polaczenie->error);
 						
-						$rezultaty_per_strona = 5;
+						$rezultaty_per_strona = 8;
 						$ile_plikow = $rezultat->num_rows;
 						$ile_stron = ceil($ile_plikow / $rezultaty_per_strona);	
 						echo "<p><b>ilość plików w bazie: ".$ile_plikow."</b><p>";	
@@ -80,7 +80,7 @@ END;
 						echo '<div class="mt-1 mb-1">';
 						for($strona=1; $strona <= $ile_stron; $strona++)
 						{
-							echo '<a href="zdjecia?strona='.$strona.'"><button class="btn bg-light"><b>'.$strona.'</b></button><a/>';
+							echo '<a href="pliki?strona='.$strona.'"><button class="btn bg-light"><b>'.$strona.'</b></button><a/>';
 						}
 						echo '</div>';
 				

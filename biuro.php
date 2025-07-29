@@ -12,7 +12,7 @@
         <main class="container">
 			<?php include 'template/scrollup.php'; ?>
 			
-			<h3 class="bg-light mt-1 mb-1 p-5 text-center">
+			<h3 class="bg-light mt-1 mb-1 p-3 text-center">
 				
 				<b>BIURO PARAFIALNE</b><br/>
 				

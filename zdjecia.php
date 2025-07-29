@@ -33,7 +33,7 @@
 						$rezultat = @$polaczenie->query($sql);
 						if(!$rezultat) throw new Exception($polaczenie->error);
 						
-						$rezultaty_per_strona = 5;
+						$rezultaty_per_strona = 8;
 						$ile_zdjec = $rezultat->num_rows;
 						$ile_stron = ceil($ile_zdjec / $rezultaty_per_strona);	
 						echo "<p><b>ilość zdjęć w galerii: ".$ile_zdjec."</b><p>";	
@@ -62,10 +62,10 @@ END;
 								echo '</tr>';
 								echo '<tr class="row mb-3">';
 								//echo '<td class="col-4">'.'<a class="nodecoration" href="szczegolyZdjecia?id='.$wiersz['id'].'">'.$wiersz['id'].'</a>'.'</td>';
-								echo '<td class="col-4"></td>';
-								echo '<td class="col-4">'.'<a class="nodecoration" href="szczegolyZdjecia?id='.$wiersz['id'].'">'.'<img src="media/user/'.$wiersz['sciezka'].'" alt="proboszcz" class="img-fluid"/></a></td>';
+								echo '<td class="col-2"></td>';
+								echo '<td class="col-8">'.'<a class="nodecoration" href="szczegolyZdjecia?id='.$wiersz['id'].'">'.'<img src="media/user/'.$wiersz['sciezka'].'" alt="proboszcz" class="img-fluid"/></a></td>';
 								//echo '<td class="col-4">'.$wiersz['tytul'].'</td>';
-								echo '<td class="col-4"></td>';
+								echo '<td class="col-2"></td>';
 								echo '</tr>';
 							}					  						
 echo<<<END

@@ -19,6 +19,7 @@
 		<div class="bg-light mt-1 content text-center">
 
 			<h3>Newsletter:</h3>
+			<h5>Zapisz się a ogłoszenia parafialne będziesz otrzymywać mailowo.</h5>
 			<form method="post" action="zapisz.php">
 				<b>E-mail:</b></br> <input type="text" name="email"/> </br>
 				<?php

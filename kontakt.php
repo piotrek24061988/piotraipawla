@@ -35,7 +35,7 @@
 				}
 			?>	
 			
-			<h3 class="bg-light mt-1 mb-1 content2 p-5 text-center">
+			<h3 class="bg-light mt-1 mb-1 content2 p-5 text-center wordwrap">
 				
 				<b>Parafia pw. Św. Apostołów Piotra i Pawła</b><br/>
 				85-007 Bydgoszcz<br/>
@@ -50,8 +50,8 @@
 				tel. 887 098 787<br/>
 				<br/>
 				<b>W internecie:</b><br/>
-				strona internetowa tymczasowa: <a href="https://piotraipawla.bydgoszcz.pl" target="_blank"" class="nodecoration">https://piotraipawla.bydgoszcz.pl</a><br/>
-				email: ryszardszymkowiak@wp.pl<br/>
+				<b>strona:</b> <a href="https://piotraipawla.bydgoszcz.pl" target="_blank"" class="nodecoration">https://piotraipawla.bydgoszcz.pl</a><br/>
+				<b>email:</b> ryszardszymkowiak@wp.pl<br/>
 				<br/>
 				<b>Konto Bankowe:</b><br/>
 				Bank PKO S.A. II O/Bydgoszcz<br/>

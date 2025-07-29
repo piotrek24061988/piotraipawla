@@ -8,6 +8,13 @@ body {
   min-height: 100vh;
 }
 
+
+@media (max-width: 991px) {
+    body {
+        background-image: url("../media/piotr_i_pawel.png");
+    }
+}
+
 .scrollup {
     width: 100px;
     height: 128px;
@@ -98,6 +105,10 @@ body {
 	text-decoration: none;
 }
 
+.wordwrap {
+	word-wrap: break-word;
+}
+
 #ciag, #fixed
 {
 	display: inline-block;
@@ -129,15 +140,20 @@ body {
 @media (max-width: 900px) {
 	.news-img
 	{
-		width: 80vw;
-		height: 30vh;
+		width: 98vw;
+		height: 36vh;
 	}
 	
 	.glownezdjecia
 	{
-		width: 80vw;
+		width: 98vw;
 		height: 42vh;
-		left: 10%;
+		left: 1%;
 		top: 50%;
 	}
+}
+
+.navbar
+{
+	z-index:2;
 }

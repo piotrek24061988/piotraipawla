@@ -25,22 +25,30 @@
 
 					<br/>
 					<h3><b>Msze św. w święta zniesione:</b><br/>
-					8:00, 10:00, 18:30<br/>
+					8:00, 10:00, 18:30 (od listopada do lutego o godzinie 17:00)<br/>
 					</h3>
 
 					<br/>
 					<h3><b>Msze św. w dni powszednie:</b><br/>
-					8:00, 18:30 (Od listopada do lutego o godzinie 17:00)<br/>
+					8:00, 18:30 (od listopada do lutego o godzinie 17:00)<br/>
 					</h3>
 
 					<br/>
-					<h3><b>Kościół Rektoralny:</b><br/>
-					p. w. Wniebowzięcia NMP.<br/>
+					<h3><b>Kościół rektoralny:</b><br/>
+					Bracia Mniejsi Kapucyni, Kościół Klarysek pw. Wniebowzięcia NMP.<br/>
+					Ul. Gdańska 2 85-005 Bydgoszcz.<br/>
+					<a class="nodecoration" href="http://klaryski.alwernia.bydgoszcz.pl" target="_blank">
+						<img src="media/klaryski.jpg" alt="bracia kapucyni" class="col-12 px-5"/>
+					</a>
 					</h3>
 
 					<br/>
 					<h3><b>Kaplica:</b><br/>
-					p.w. Nieustającej Adoracji Najśw. Sakramentu Bożego Ciała.<br/>
+					Kaplica Bożego Ciała, Mniszki Klaryski od Wieczystej Adoracji.<br/> 
+					Ul. Gdańska 56, 85-021 Bydgoszcz.<br/>
+					<a class="nodecoration" href="https://bydgoszcz.klaryski.org" target="_blank">
+						<img src="media/WieczystaAdoracja.jpg" alt="siostry klaryski" class="col-12 px-5"/>
+					</a>
 					</h3>
 
 					<br/>
@@ -50,12 +58,12 @@
 
 					<br/>
 					<h3><b>Wieczysta Adoracja:</b><br/>
-					5 marca, 2 sierpnia.<br/>
+					5 marca, 2 sierpnia<br/>
 					</h3>
 
 					<br/>
 					<h3><b>Data erygowania parafii:</b><br/>
-					1 października 1946r.
+					1 października 1946 r.
 					</h3>
 				<p>
 			</div>

@@ -1,20 +1,35 @@
 <?php
 
 	@session_start();
-	
+
+	function getHits()
+	{
+ 		if(($fp = @fopen("template/counter.txt", "r+")) === false)
+    			return -1;
+  		$count = fgets($fp);
+		if(!isset($_COOKIE['licznikWejsc'])){
+			setcookie('licznikWejsc', 'licznikWejsc', time() + 3600);
+  			$count = $count + 1;
+  			fseek($fp, 0);
+  			fputs($fp, $count);
+		}
+		fclose($fp);
+  		return $count;
+	}
+	$hits_counter = getHits();
 echo<<<END
 	<header class="site-header col-12">
 		<div class="row topcontent bg-light">
-			<img src="media/Piotr.jpg" alt="Apostoł Piotr" class="col-12 col-md-1 bg-light topimg"/>
-			<div class="col-12 col-md-10 bg-light d-flex align-items-center justify-content-center">
-			<h2><b>Parafia pw. Św. Apostołów Piotra i Pawła w Bydgoszczy</b></h2>
+			<img src="media/Piotr.jpg" alt="Apostoł Piotr" class="d-none d-md-block col-md-1 bg-light topimg"/>
+			<div class="d-none d-md-flex col-md-10 bg-light align-items-center justify-content-center">
+			<h2><b>Parafia Św. Apostołów Piotra i Pawła w Bydgoszczy</b></h2>
 			</div>
-			<img src="media/Pawel.jpg" alt="Apostoł Paweł" class="col-12 col-md-1 bg-light topimg"/>
+			<img src="media/Pawel.jpg" alt="Apostoł Paweł" class="d-none d-md-block col-md-1 bg-light topimg"/>
 		</div>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
 			<div class="container">
 				<button class="navbar-toggler mr-auto ml-auto w-100 border-dark" style="border-width:2px" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-					<h3 class="text-dark">MENU</h3>
+					<h5 class="text-dark">Parafia Św. Apostołów Piotra i Pawła w Bydgoszczy</h5>
 					<span class="navbar-toggler-icon my-1">
 						<!--<img style="width: 100%; height: 100%;" src="media/pp.jpg" alt="przycisk rozwijanej nawigacji"/>-->
 					</span>
@@ -52,6 +67,7 @@ echo<<<END
 								<a class="dropdown-item bg-light font-weight-bold" href="biuro"><h3>Biuro</h3></a>
 								<a class="dropdown-item bg-light font-weight-bold" href="parafia"><h3>Historia</h3></a>
 								<a class="dropdown-item bg-light font-weight-bold" href="duchowni"><h3>Duchowieństwo</h3></a>
+                                                                <a class="dropdown-item bg-light font-weight-bold" href="ochrona"><h3>Ochrona dzieci</h3></a>
 							</div>
 						</div>
 						<div class="nav-item dropdown">
@@ -59,8 +75,8 @@ echo<<<END
 								<h3>Ogłoszenia</h3>
 							</button>
 							<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
-								<a class="dropdown-item bg-light font-weight-bold" href="ogloszeniaStale"><h3>Stałe</h3></a>
 								<a class="dropdown-item bg-light font-weight-bold" href="ogloszeniaBiezace"><h3>Bieżące</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="ogloszeniaStale"><h3>Stałe</h3></a>
 								<a class="dropdown-item bg-light font-weight-bold" href="newsletter"><h3>Newsletter</h3></a>
 END;
 								if(isset($_SESSION['user']))
@@ -116,6 +132,7 @@ echo<<<END
 							</button>
 							<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
 								<a class="dropdown-item bg-light font-weight-bold" href="akcjaKatolicka"><h3>Akcja Katolicka</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="salaKatechetyczna"><h3>Salka katechetyczna</h3></a>
 							</div>
 						</div>
 END;
@@ -135,6 +152,7 @@ echo<<<END
 							<div class="dropdown-menu bg-light mr-auto ml-auto" aria-labelledby="subnav">
 								<a class="dropdown-item bg-light font-weight-bold" href="rejestracja"><h3>Rejestracja</h3></a>
 								<a class="dropdown-item bg-light font-weight-bold" href="admini"><h3>Administratorzy</h3></a>
+								<a class="dropdown-item bg-light font-weight-bold" href="#"><h3>Wej: $hits_counter</h3></a>
 								<a class="dropdown-item bg-light font-weight-bold" href="wyloguj"><h3>Wylogowanie</h3></a>
 							</div>
 						</div>

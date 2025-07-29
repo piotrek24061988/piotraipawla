@@ -24,10 +24,10 @@
 					Dziecko do chrztu zgłaszają rodzice w biurze naszej parafii. Zapisu do Księgi Chrztu dokonuje się na podstawie odpisu aktu urodzenia.
 
 					<br/><br/>
-					Chrzestnym może być osoba ochrzczona, bierzmowana, praktykująca, Jeżeli żyje w sakramentalnym związku małżeńskim.
+					Chrzestnym może być osoba ochrzczona, bierzmowana, praktykująca, jeżeli żyje w sakramentalnym związku małżeńskim.
 
 					<br/><br/>
-					Instrukcja i pouczenie dla rodziców i rodziców chrzestnych w sobotę o godzinie 10:30 w biurze naszej parafii przy ul. Reja 3 
+					Instrukcja i pouczenie dla rodziców i rodziców chrzestnych w biurze naszej parafii przy ul. Mikołaja Reja 3. 
 				</h3>
 			</div>
         </main>

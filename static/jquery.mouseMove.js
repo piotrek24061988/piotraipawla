@@ -75,8 +75,8 @@ window.onload = function() {
 function resetTimers() {
     clearTimeout(timer1);
     clearTimeout(timer2);
-    timer1 = setTimeout("hideSlide()", 5000);
-    timer2 = setTimeout("changeSlide()", 8000);
+    timer1 = setTimeout("hideSlide()", 7000);
+    timer2 = setTimeout("changeSlide()", 12000);
 }
 
 function hideSlide() {
